@@ -18,7 +18,7 @@ const RouteWrapper = ({ ...props }: RouteProps): ReactElement => {
 
         const isLoggedIn = !!userManager.userInfo;
 
-        console.log(isLoggedIn);
+        // console.log(isLoggedIn);
 
         // if (!isLoggedIn && props.needAuth) {
         //     navigate(Paths.login);

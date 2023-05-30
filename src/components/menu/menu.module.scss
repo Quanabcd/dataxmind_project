@@ -1,0 +1,79 @@
+@import 'assets/scss';
+.text {
+    font-family: $font-regular;
+    text-align: center;
+    font-size: $text-normal;
+    display: block;
+}
+
+.btn_text {
+    font-family: $font-regular;
+    text-align: center;
+    font-size: $text-small;
+    display: block;
+    min-width: 80px;
+}
+
+.container {
+    border-radius: 5px;
+    border: unset;
+    padding: 10px 0;
+}
+
+.btn-base {
+    border: none;
+    box-shadow: none;
+    color: $color-white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    &:hover {
+        opacity: 0.8;
+    }
+    &:active {
+        opacity: 0.5;
+    }
+}
+
+.btn {
+    &_red {
+        @extend .btn-base;
+        background-color: $color-red;
+    }
+    &_blue {
+        @extend .btn-base;
+        background-color: $color-blue
+    }
+    &_gray {
+        @extend .btn-base;
+        background-color: $color-gray
+    }
+    &_green {
+        @extend .btn-base;
+        background-color: $color-green
+    }
+    &_green_white {
+        @extend .btn-base;
+        background-color: $color-white;
+        border: solid $color-green;
+        border-width: 1px;
+    }
+}
+
+.btn_txt {
+    &_white {
+        @extend .btn_text;
+        color: $color-white;
+    }
+    &_green {
+        @extend .btn_text;
+        color: $color-green;
+    }
+}
+
+.icon-right-styles {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}

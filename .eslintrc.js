@@ -36,9 +36,9 @@ module.exports = {
         // enable additional rules
         indent: ['error', 4, { SwitchCase: 1 }],
 
-        'linebreak-style': ['error', 'unix'],
+        'linebreak-style': 0,
         quotes: ['error', 'single'],
-        semi: ['error', 'always'],
+        // semi: ['error', 'none'],
 
         'comma-dangle': ['error', 'never'],
         'no-cond-assign': ['error', 'always'],
@@ -74,7 +74,7 @@ module.exports = {
         'no-shadow': 'off',
         '@typescript-eslint/no-unused-vars': 1,
         '@typescript-eslint/no-shadow': ['error'],
-        'filenames/match-regex': [2, '^[a-z.-]+$', false]
+        'filenames/match-regex': [2, '^[a-z.-]+$', true]
     },
     env: {
         jest: true,

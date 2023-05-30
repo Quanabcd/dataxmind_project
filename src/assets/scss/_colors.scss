@@ -2,7 +2,7 @@
 $color-white: #FFFFFF;
 $color-white-gray: #f6f6f6;
 //black
-$color-black-origin: #000000;
+$color-black-origin: rgba(59, 59, 59, 1);
 $color-black: #595959;
 //red
 $color-red: #c62828;
@@ -18,8 +18,9 @@ $color-blue-e1: #4299E1; //green
 $color-green: #0e9549;
 $color-green1: #77C197;
 $color-green2: #E8F4ED;
-$color-green-header:#1D9752;
+$color-green-header: #1D9752;
 $color-green-input: #D2EADC;
+$color-blue-opacity: #E7F9FA;
 //gray
 $color-gray: #bdbdbd;
 $color-gray1: #262626;
@@ -34,7 +35,8 @@ $color-light-gray: #828282;
 $color-dark-gray: #454546;
 $color-gray-d8: #D8D8D8;
 $color-gray-e6: #E6E6E6;
-$color-gray-e8: #E8E8E8;
+$color-gray-e8: #F3F3F3;
+$color-gray-e9: #F8F8F8;
 $color-t-gray: rgba(0, 0, 0, 0.05);
 $color-solid-border: #E8E8E8;
 $color-dash-border: #D4D4D4;
@@ -42,6 +44,12 @@ $color-dash-border: #D4D4D4;
 $color-yellow: #ffeaac;
 $color-yellow-y1: #FFF3CD;
 $color-yellow-d9: #997404;
-$color-gray-f7:#F7F7F7;
+$color-gray-f7: #F7F7F7;
 //tranparent
 $color-transparent: transparent;
+$boder-blue-transparent: rgb(153 212 215);
+$color-tras-black:  rgba(0, 0, 0, 0.02);
+
+//linear
+$color-linear-red: linear-gradient(94.52deg, #F05151 6.21%, #0089D6 102%);
+$color-linear-green: linear-gradient(93.59deg, #86DFE7 1.72%, #516EF0 95.65%);

@@ -14,6 +14,7 @@ export const Button = ({
     leftIcon,
     tag,
     buttonStyle,
+    textStyle,
     containButtonStyles,
     customStyles,
     width,
@@ -38,6 +39,12 @@ export const Button = ({
             case BUTTON_STYLES.GREEN:
                 style = styles.btn_green;
                 break;
+            case BUTTON_STYLES.LINEAR:
+                style = styles.btn_linear;
+                break;
+            case BUTTON_STYLES.LINEAR_GREEN:
+                style = styles.btn_linear_green;
+                break;
             case BUTTON_STYLES.GRAY:
             default:
                 style = styles.btn_gray;
@@ -49,9 +56,12 @@ export const Button = ({
     const mergerLabelStyle = useMemo<any>(() => {
         let style: string;
 
-        switch (buttonStyle) {
+        switch (textStyle) {
             case BUTTON_STYLES.GREEN_WHITE:
                 style = styles.btn_txt_green;
+                break;
+            case BUTTON_STYLES.BLACK:
+                style = styles.btn_txt_black;
                 break;
             default:
                 style = styles.btn_txt_white;
@@ -59,7 +69,7 @@ export const Button = ({
         }
 
         return `${style}`;
-    }, [buttonStyle]);
+    }, [textStyle]);
 
     return (
         <button

@@ -3,7 +3,10 @@ export enum BUTTON_STYLES {
     GRAY = 'GRAY',
     WHITE = 'WHITE',
     GREEN = 'GREEN',
-    GREEN_WHITE = 'GREEN_WHITE'
+    GREEN_WHITE = 'GREEN_WHITE',
+    LINEAR = 'LINEAR',
+    BLACK = 'BLACK',
+    LINEAR_GREEN = 'LINEAR_GREEN'
 }
 
 
@@ -13,6 +16,7 @@ export type ButtonProps = {
     fontSize?: number;
     containButtonStyles?: string;
     customStyles?: any;
+    textStyle?: any;
     labelStyles?: string;
     rightIconStyles?: any;
     icon?: any;
