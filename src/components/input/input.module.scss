@@ -21,7 +21,7 @@
 
 .messageError {
     margin: 5px 0px 0 0px;
-    background-color: $color-white;
+    // background-color: $color-white;
     .text-err {
         color: $color-red1;
         font-size: $text-small;
@@ -92,7 +92,7 @@
     color: $color-gray2;
     font-size: $text-small;
     font-family: $font-regular;
-    border: 1px solid $color-gray-d8;
+    border: none;
 }
 
 .disable-input-container {
@@ -145,7 +145,7 @@
 }
 
 input[type=date]::-webkit-calendar-picker-indicator {
-    background: url(../../assets/image/img_calendar.png) no-repeat;
+    // background: url(../../assets/image/Img_Calendar.png) no-repeat;
     cursor: pointer;
 }
 
@@ -185,7 +185,7 @@ input[type=date]:valid::before {
     width: 100%;
     padding: 12px 16px;
     border-radius: 5px;
-    border: 1px solid $color-gray-d8;
+    border: none;
 }
 
 input[autoCapitalize=characters] {

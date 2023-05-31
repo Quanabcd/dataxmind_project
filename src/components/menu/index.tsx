@@ -1,5 +1,5 @@
-import { DownOutlined } from '@ant-design/icons';
-import React from 'react';
+import { CloseOutlined, DownOutlined, MenuOutlined } from '@ant-design/icons';
+import React, { useCallback, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import Ic_Arrowup from 'assets/icon/Ic_Arrow-up.png';
 import Ic_Friendly from 'assets/icon/Ic_Friendly.png';
@@ -8,6 +8,12 @@ import { BUTTON_STYLES } from 'components/button/types';
 import { Button } from 'components/button';
 
 export const Navbar = () => {
+
+    const [toogle, setToogle] = useState<boolean>(false);
+
+    const onChangeToogle = useCallback(() => {
+        setToogle(!toogle)
+    }, [toogle])
 
     return (
         <div className='header-container'>
@@ -19,7 +25,14 @@ export const Navbar = () => {
                                 <img src={Ic_Logo} alt='logo' />
                             </Link>
                         </div>
-                        <div className='menu'>
+                        <div className='hidden-md hidden-lg'>
+
+                            <div className='navbar-button' onClick={onChangeToogle}>
+                                {!toogle ? <MenuOutlined rev={undefined} /> : <CloseOutlined rev={undefined} />}
+                            </div>
+
+                        </div>
+                        <div className={`menu ${toogle ? 'actve' : 'disable'}`}>
                             <div className='navigation'>
                                 <ul className='nav-menu'>
                                     <li className='nav-item'><Link className='active' to='/'>Solutions <DownOutlined rev={undefined} /></Link></li>
@@ -30,7 +43,7 @@ export const Navbar = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='menu-right'>
+                    <div className={`menu-right ${toogle ? 'actve' : 'disable'}`}>
                         <div className='button_sellect'>
 
                             <Button
@@ -50,7 +63,7 @@ export const Navbar = () => {
                                 isLowerCase
                                 customStyles={{ borderRadius: 50 }}
                             />
-                            
+
                         </div>
                         <div className='sellect-language'>
                             <select name='select_language' className='select_language'>

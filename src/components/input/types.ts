@@ -1,7 +1,7 @@
 
 export type TextFieldProps = {
     capitalize?: 'none' | 'sentences' | 'words' | 'characters' | undefined,
-    type: 'radio' | 'email' | 'phone' | 'text' | 'number' | 'password' | 'date' | 'tel',
+    type: 'radio' | 'email' | 'phone' | 'text' | 'number' | 'password' | 'date' | 'tel' | 'file',
     label?: string;
     value?: string | number;
     placeHolder?: string;
