@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import { DoubleRightOutlined } from '@ant-design/icons';
-import Img_idea_1 from 'C:/Users/Admin/Documents/GitHub/quan/dataxmind_project/src/assets/icon/Img_idea_1.svg';
-import Img_idea_2 from 'C:/Users/Admin/Documents/GitHub/quan/dataxmind_project/src/assets/icon/Img_idea_2.svg';
-import Img_idea_3 from 'C:/Users/Admin/Documents/GitHub/quan/dataxmind_project/src/assets/icon/Img_idea.svg';
-import Img_idea_4 from 'C:/Users/Admin/Documents/GitHub/quan/dataxmind_project/src/assets/icon/Img_idea4.svg';
+import Img_idea_1 from 'https://gitlab.com/dataxmind1/app1/-/blob/master/src/assets/icon/Img_idea_1.svg';
+import Img_idea_2 from 'https://gitlab.com/dataxmind1/app1/-/blob/master/src/assets/icon/Img_idea_2.svg';
+import Img_idea_3 from 'https://gitlab.com/dataxmind1/app1/-/blob/master/src/assets/icon/Img_idea.svg';
+import Img_idea_4 from 'https://gitlab.com/dataxmind1/app1/-/blob/master/src/assets/icon/Img_idea4.svg';
 import { Button } from 'components/button';
 import { BUTTON_STYLES } from 'components/button/types';
 import Ic_Calendar from 'assets/icon/Ic_Calendar.png';
