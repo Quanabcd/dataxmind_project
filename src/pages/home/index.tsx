@@ -125,7 +125,7 @@ function Home() {
                     <div className='container'>
                         <div className='col-xs-12 col-sm-12 col-md-6'>
                             <div className='slide_box_left'>
-                                <h1 className='title_web fadeIn1'>DataXmind - Leading Mobile App Partner in vietnam</h1>
+                                <h1 className='title_web fadeIn1'>DataXmind - Leading Mobile App Partner in Viet Nam</h1>
                                 <p className='descreption fadeIn2'>The most powerfull Mobile App maker for app Store & CH Play </p>
                                 <div className='content fadeIn3'>
                                     <p>DataXmind Mobile’s powerfull and easy to build mobile app builder makes it. So you can make rapidly mobile apps for IOS & Android in a Fraction of the time and cost. Based on both cross platform and native languages</p>
